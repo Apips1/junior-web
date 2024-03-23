@@ -318,6 +318,21 @@
 
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label for="inputJurusan">ALamat</label>
+                            <input name="alamat" type="text" class="form-control" id="inputJurusan"
+                                placeholder="Enter your Alamat" value="{{ $edit->alamat }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputJurusan">Usia</label>
+                            <input name="usia" type="text" class="form-control" id="inputJurusan"
+                                placeholder="Enter your Usia" value="{{ $edit->usia }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputJurusan">Tempat Tanggal Lahir</label>
+                            <input name="ttl" type="text" class="form-control" id="inputJurusan"
+                                placeholder="Enter your Tempat Tanggal Lahir" value="{{ $edit->ttl }}">
+                        </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
 

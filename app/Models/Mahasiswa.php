@@ -14,6 +14,9 @@ class Mahasiswa extends Model
         'nama',
         'email',
         'jurusan',
-        'gender'
+        'gender',
+        'alamat',
+        'ttl',
+        'usia',
     ];
 }

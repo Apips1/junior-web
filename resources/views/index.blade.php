@@ -303,6 +303,9 @@
                                             <th>Email</th>
                                             <th>Jurusan</th>
                                             <th>Gender</th>
+                                            <th>Alamat</th>
+                                            <th>Usia</th>
+                                            <th>Tempat Tanggal Lahir</th>
 
                                         </tr>
                                     </thead>
@@ -320,6 +323,9 @@
                                                         Perempuan
                                                     @endif
                                                 </td>
+                                                <td>{{ $item->alamat }}</td>
+                                                <td>{{ $item->usia }}</td>
+                                                <td>{{ $item->ttl }}</td>
 
                                             </tr>
                                         @endforeach

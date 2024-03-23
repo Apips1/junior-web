@@ -46,7 +46,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('mahasiswa.create') }}">
+                <a class="nav-link" href="{{ route('mahasiswa.admin') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Admin</span></a>
             </li>
@@ -316,6 +316,21 @@
                                 <option value="0">Perempuan</option>
 
                             </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputJurusan">ALamat</label>
+                            <input name="alamat" type="text" class="form-control" id="inputJurusan"
+                                placeholder="Enter your Alamat">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputJurusan">Usia</label>
+                            <input name="usia" type="text" class="form-control" id="inputJurusan"
+                                placeholder="Enter your Usia">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputJurusan">Tempat Tanggal Lahir</label>
+                            <input name="ttl" type="text" class="form-control" id="inputJurusan"
+                                placeholder="Enter your Tempat Tanggal Lahir">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

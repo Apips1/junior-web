@@ -50,6 +50,9 @@ class MahasiswaController extends Controller
             'email' => 'required|email',
             'jurusan' => 'required',
             'gender' => 'required',
+            'alamat' => 'required',
+            'ttl' => 'required',
+            'usia' => 'required',
         ]);
         Mahasiswa::create($validated);
         return redirect('/');
@@ -84,7 +87,10 @@ class MahasiswaController extends Controller
             'nama' => $request->nama,
             'email' => $request->email,
             'jurusan' => $request->jurusan,
-            'gender' => $request->gender
+            'gender' => $request->gender,
+            'alamat' => $request->alamat,
+            'ttl' => $request->ttl,
+            'usia' => $request->usia,
         ];
         Mahasiswa::where('id', $id)->update($value);
 

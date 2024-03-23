@@ -86,11 +86,12 @@
                     </form>
 
                     <!-- Topbar Search -->
-                    <form
+                    <form action="{{ route('mahasiswa.admin') }}" method="GET"
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small"
-                                placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2"
+                                name="search" value="{{ $search }}">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -318,6 +319,9 @@
                                             <th>Email</th>
                                             <th>Jurusan</th>
                                             <th>Gender</th>
+                                            <th>Alamat</th>
+                                            <th>Usia</th>
+                                            <th>Tempat Tanggal Lahir</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -328,6 +332,9 @@
                                                 <td>{{ $item->nama }}</td>
                                                 <td>{{ $item->email }}</td>
                                                 <td>{{ $item->jurusan }}</td>
+                                                <td>{{ $item->alamat }}</td>
+                                                <td>{{ $item->usia }}</td>
+                                                <td>{{ $item->ttl }}</td>
                                                 <td>
                                                     @if ($item->gender == 1)
                                                         Laki-laki
