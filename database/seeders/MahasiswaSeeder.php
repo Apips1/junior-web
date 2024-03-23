@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Mahasiswa;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class MahasiswaSeeder extends Seeder
@@ -19,13 +18,13 @@ class MahasiswaSeeder extends Seeder
             'email' => 'ahmad@example.com',
             'jurusan' => 'Teknik Informatika',
             'gender' => 1]);
-            Mahasiswa::firstOrCreate([
+        Mahasiswa::firstOrCreate([
             'nim' => '2021102002',
             'nama' => 'Budi',
             'email' => 'budi@example.com',
             'jurusan' => 'Teknik Informatika',
             'gender' => 1]);
-            Mahasiswa::firstOrCreate([
+        Mahasiswa::firstOrCreate([
             'nim' => '2021102003',
             'nama' => 'Cinta',
             'email' => 'cinta@example.com',

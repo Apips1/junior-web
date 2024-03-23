@@ -318,8 +318,8 @@
                                             <th>Name</th>
                                             <th>Email</th>
                                             <th>Jurusan</th>
-                                            <th>Gender</th>
                                             <th>Alamat</th>
+                                            <th>Gender</th>
                                             <th>Usia</th>
                                             <th>Tempat Tanggal Lahir</th>
                                             <th>Action</th>
@@ -333,8 +333,6 @@
                                                 <td>{{ $item->email }}</td>
                                                 <td>{{ $item->jurusan }}</td>
                                                 <td>{{ $item->alamat }}</td>
-                                                <td>{{ $item->usia }}</td>
-                                                <td>{{ $item->ttl }}</td>
                                                 <td>
                                                     @if ($item->gender == 1)
                                                         Laki-laki
@@ -342,6 +340,9 @@
                                                         Perempuan
                                                     @endif
                                                 </td>
+                                                <td>{{ $item->usia }}</td>
+                                                <td>{{ $item->ttl }}</td>
+
                                                 <td>
                                                     <a href="{{ route('mahasiswa.edit', $item->id) }}"
                                                         class="btn btn-primary">Edit</a>

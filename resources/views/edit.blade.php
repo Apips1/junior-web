@@ -286,7 +286,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">HOME</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Admin</h1>
                     <form action="{{ route('mahasiswa.update', $edit->id) }}" method="POST">
                         @csrf
                         @method('PATCH')

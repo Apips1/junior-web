@@ -18,8 +18,10 @@ class MahasiswaController extends Controller
             $query->where('nama', 'like', "%$search%");
         }
         $mahasiswa = $query->orderBy('nim', 'desc')->get();
+
         return view('index', compact('mahasiswa', 'search'));
     }
+
     public function admin(Request $request)
     {
         $search = $request->query('search');
@@ -28,6 +30,7 @@ class MahasiswaController extends Controller
             $query->where('nama', 'like', "%$search%");
         }
         $mahasiswa = $query->orderBy('nim', 'desc')->get();
+
         return view('admin', compact('mahasiswa', 'search'));
     }
 
@@ -55,6 +58,7 @@ class MahasiswaController extends Controller
             'usia' => 'required',
         ]);
         Mahasiswa::create($validated);
+
         return redirect('/');
     }
 
@@ -103,6 +107,7 @@ class MahasiswaController extends Controller
     public function destroy(string $id)
     {
         Mahasiswa::where('id', $id)->first()->delete();
+
         return redirect('/admin');
     }
 }
